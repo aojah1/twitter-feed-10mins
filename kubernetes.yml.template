@@ -1,7 +1,7 @@
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
-  name: twitter-feed-10mins
+  name: twitter-feed-v1
   labels:
     commit: ${WERCKER_GIT_COMMIT}
 spec:
@@ -29,7 +29,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: twitter-feed-10mins
+  name: twitter-feed
   labels:
     app: twitter-feed
     commit: ${WERCKER_GIT_COMMIT}
